@@ -16,6 +16,8 @@
 
     <!-- Style Sheets-->
     <link rel="stylesheet" href="css/searchPageStyles.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
 <header>
@@ -31,7 +33,30 @@
     </ul>
 </header>
 
+<section id="search-section" class="search">
+    <form>
+        <label for="propertyType" class="form-label">Property Type</label>
+        <select name="propertyType" id="propertyType">
+            <option value="any">Any</option>
+            <option value="house">House</option>
+            <option value="flat">Flat</option>
+        </select>
+        <label class="form-label">Bedrooms</label>
+        <label class="form-label" for="mini-bedrooms">min</label>
+        <label class="form-label" for="max-bedrooms">max</label>
+        <input type="text" id="mini-bedrooms">
+        <input type="text" id="max-bedrooms">
+        <label class="form-label">Price</label><br>
+        <label class="form-label" for="price-range">Rs. 00.00 - Rs. 00.00</label>
+        <input type="range" id="price-range" min="10000" max="800000">
+        <label for="added-date" class="form-label">Added Date</label>
+        <input type="date" id="added-date" required>
+        <button type="button" id="submit-btn">
+            <i class='fas fa-angle-right'></i></button>
+    </form>
+</section>
 
+<footer></footer>
 <!--JQuery Script-->
 <script src="js/jquery-3.3.1.min.js"></script>
 </body>
