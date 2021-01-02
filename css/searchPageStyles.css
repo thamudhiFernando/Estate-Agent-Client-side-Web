@@ -103,6 +103,49 @@ button#submit-btn {
     margin-left: 20px;
 }
 
+footer{
+    width: 98%;
+    height: 105px;
+    border: 2px #B16262 dashed;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#footer-logo-image{
+    position: absolute;
+    left: 150px;
+    height: 35px;
+}
+.footer-item:nth-child(2) {
+    font-size: 30px;
+    padding-top: 25px;
+    margin-left: 30px;
+    color: #B16262;
+    font-weight: bold;
+}
+
+.footer-item:nth-child(2) > strong {
+    color: #063839;
+    font-weight: 600;
+}
+
+.footer-item:nth-child(3) {
+    font-weight: bold;
+    font-size: smaller;
+    margin-left: 5px;
+}
+
+.footer-item:last-child {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-left: 25px;
+}
+
+
 /*.background-image{*/
 /*    height: 500px;*/
 /*    font-size: 20px;*/
