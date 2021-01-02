@@ -103,7 +103,7 @@ button#submit-btn {
     margin-left: 20px;
 }
 
-footer{
+footer.main-sec{
     width: 98%;
     height: 105px;
     border: 2px #B16262 dashed;
