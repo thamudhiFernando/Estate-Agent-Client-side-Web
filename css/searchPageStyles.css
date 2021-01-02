@@ -64,11 +64,12 @@ form > input:nth-child(2) {
     color: lightgoldenrodyellow;
 }
 
-button#submit-btn:hover .fa-angle-right{
+button#submit-btn:hover .fa-angle-right {
     padding: 0px;
     font-size: 60px;
     color: white;
 }
+
 button#submit-btn {
     background-color: #B16262;
     border: 2px solid white;
@@ -196,6 +197,83 @@ button#submit-btn {
         height: 70px;
         border-radius: 50%;
         margin: 10px 37%;
+    }
+
+    #main-section {
+        position: absolute;
+        top: 650px;
+        width: 100%;
+    }
+
+    .main-sec {
+        float: left;
+    }
+    .main-sec > h3{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #413F3F;
+        margin-left: 20px;
+    }
+    #result-section{
+        width: 70%;
+    }
+    #result-section > h2{
+        background-color: #063839;
+        color: white;
+        width: 60%;
+        padding: 10px;
+        border-radius: 50px;
+        margin-top: 20px;
+        margin-left: 1%;
+    }
+    .property > img{
+        height: 150px;
+        border-radius: 25px;
+        padding-right: 15px;
+    }
+    #property-section{
+        width: 100%;
+    }
+    .property{
+        width: 400px;
+        border: lightgoldenrodyellow 2px solid;
+        position: relative;
+        float: left;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+    .propertyy{
+        position: relative;
+        float: left;
+    }
+    .propertyy:first-child{
+        width: 50%;
+    }
+    .propertyy:last-child{
+        width: 43%;
+    }
+    .propertyy:last-child > p{
+        font-size: smaller;
+        color: #5E5E5E;
+    }
+    .propertyy:last-child > h4:first-child{
+        color: #B16262;
+    }
+    .propertyy:last-child > h4:last-child{
+        color: #5E5E5E;
+    }
+    .propertyy:last-child > h3{
+        color: #063839;
+    }
+    #fav-list-section{
+        width: 25%;
+    }
+    .fa-heart{
+        color: crimson;
+        font-size: 30px;
     }
 }
 
