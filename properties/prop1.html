@@ -12,7 +12,7 @@
     <title>yourHome - Estate Agent</title>
 
     <!--  Additional CSS-->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
 
     <!-- Style Sheets-->
     <link rel="stylesheet" href="../css/propertyStyle.css">
@@ -22,6 +22,8 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
+
+
 <header>
     <ul id="header-item-list">
         <li class="header-item">Home</li>
@@ -60,15 +62,15 @@
                 <button class="tab-btn" id="defaultTab" onclick="redirectTab('Description', this)">Description</button>
                 <button class="tab-btn" onclick="redirectTab('Floor', this)">Floor Plan</button>
                 <button class="tab-btn" onclick="redirectTab('Google', this)">Google Map</button>
-                <section id="Description" class="tan-pane-content">
+                <section id="Description" class="tab-pane-content">
                     <h2>Description</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, distinctio dolorem esse expedita explicabo facilis nostrum, nulla, officia quasi similique voluptate. Facere nemo quo ratione saepe, unde veritatis voluptatem!</p>
                 </section>
-                <section id="Floor" class="tan-pane-content">
+                <section id="Floor" class="tab-pane-content">
                     <h2>Floor</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, distinctio dolorem esse expedita explicabo facilis nostrum, nulla, officia quasi similique voluptate. Facere nemo quo ratione saepe, unde veritatis voluptatem!</p>
                 </section>
-                <section id="Google" class="tan-pane-content">
+                <section id="Google" class="tab-pane-content">
                     <h2>Google</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, distinctio dolorem esse expedita explicabo facilis nostrum, nulla, officia quasi similique voluptate. Facere nemo quo ratione saepe, unde veritatis voluptatem!</p>
                 </section>
@@ -85,5 +87,8 @@
         <li class="footer-item">Thamudhi Fernando @ 2021 Jan</li>
     </ul>
 </footer>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/propertyScript.js"></script>
 </body>
 </html>

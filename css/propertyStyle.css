@@ -63,6 +63,7 @@ h4.heading > strong {
     width: 30%;
 }
 
+
 @media screen and (min-width: 769px) {
     #prop-main-section {
         background-color: white;
