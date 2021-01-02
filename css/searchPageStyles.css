@@ -79,6 +79,29 @@ button#submit-btn {
     font-size: 16px;
     cursor: pointer;
 }
+.propertyy:last-child > p{
+    font-size: smaller;
+    color: #5E5E5E;
+}
+.propertyy:last-child > h4:first-child{
+    color: #B16262;
+}
+.propertyy:last-child > h4:last-child{
+    color: #5E5E5E;
+}
+.propertyy:last-child > h3{
+    color: #063839;
+}
+.fa-heart{
+    color: crimson;
+    font-size: 30px;
+}
+.main-sec > h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #413F3F;
+    margin-left: 20px;
+}
 
 /*.background-image{*/
 /*    height: 500px;*/
@@ -208,16 +231,13 @@ button#submit-btn {
     .main-sec {
         float: left;
     }
-    .main-sec > h3{
-        margin-top: 30px;
-        margin-bottom: 20px;
-        color: #413F3F;
-        margin-left: 20px;
-    }
-    #result-section{
+
+
+    #result-section {
         width: 70%;
     }
-    #result-section > h2{
+
+    #result-section > h2 {
         background-color: #063839;
         color: white;
         width: 60%;
@@ -226,15 +246,18 @@ button#submit-btn {
         margin-top: 20px;
         margin-left: 1%;
     }
-    .property > img{
+
+    .property > img {
         height: 150px;
         border-radius: 25px;
         padding-right: 15px;
     }
-    #property-section{
+
+    #property-section {
         width: 100%;
     }
-    .property{
+
+    .property {
         width: 400px;
         border: lightgoldenrodyellow 2px solid;
         position: relative;
@@ -245,35 +268,22 @@ button#submit-btn {
         padding-bottom: 20px;
         cursor: pointer;
     }
-    .propertyy{
+
+    .propertyy {
         position: relative;
         float: left;
     }
-    .propertyy:first-child{
+
+    .propertyy:first-child {
         width: 50%;
     }
-    .propertyy:last-child{
+
+    .propertyy:last-child {
         width: 43%;
     }
-    .propertyy:last-child > p{
-        font-size: smaller;
-        color: #5E5E5E;
-    }
-    .propertyy:last-child > h4:first-child{
-        color: #B16262;
-    }
-    .propertyy:last-child > h4:last-child{
-        color: #5E5E5E;
-    }
-    .propertyy:last-child > h3{
-        color: #063839;
-    }
-    #fav-list-section{
+
+    #fav-list-section {
         width: 25%;
-    }
-    .fa-heart{
-        color: crimson;
-        font-size: 30px;
     }
 }
 
@@ -385,6 +395,66 @@ button#submit-btn {
         height: 100px;
         border-radius: 50%;
         margin: 50px 37%;
+    }
+
+    #main-section {
+        position: absolute;
+        top: 830px;
+        width: 100%;
+        background-color: white;
+    }
+
+    #result-section {
+        width: 100%;
+    }
+
+    #result-section > h2 {
+        background-color: #063839;
+        color: white;
+        width: 92%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-left: 2%;
+        margin-right: 1%;
+    }
+
+    .property > img {
+        height: 150px;
+        border-radius: 25px;
+        padding-right: 15px;
+    }
+
+    #property-section {
+        width: 100%;
+    }
+
+    .property {
+        border: lightgoldenrodyellow 1px solid;
+        position: relative;
+        float: left;
+        padding-left: 3%;
+        padding-right: 2%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .propertyy {
+        position: relative;
+        float: left;
+    }
+
+    .propertyy:first-child {
+        width: 220px;
+    }
+
+    .propertyy:last-child {
+        width: 43%;
+    }
+
+    #fav-list-section {
+        width: 100%;
     }
 }
 
