@@ -1,75 +1,83 @@
+/*Import font style from google font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/*apply style for all elements*/
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
     font-family: 'Roboto', sans-serif;
 }
 
+/*apply CSS for child inside form such as label, input and select*/
 form > label, input, select {
     width: 100%;
     padding: 5px;
     font-size: 20px;
 }
 
+/*apply CSS for all label class as form-label inside form  */
 form > .form-label {
     position: relative;
     float: left;
     color: white;
 }
 
+/*aply style for 5th child inside the form*/
 form > .form-label:nth-child(5) {
     float: right;
 }
 
+/*apply CSS for input type as text inside form*/
 form > input[type=text] {
     position: relative;
     float: left;
 }
-
+/*apply style for 2nd input inside form*/
 form > input:nth-child(2) {
     float: right;
 }
-
+/*apply CSS for search criteria*/
 #search-section {
     background-color: #063839;
     opacity: 90%;
     z-index: -1;
 }
-
+/*CSS for 2nd header item*/
 .header-item1:nth-child(2) {
     font-size: 40px;
     color: #B16262;
 }
-
+/*CSS for strong element inside 2nd header item*/
 .header-item1:nth-child(2) > strong {
     color: white;
     font-weight: 600;
 }
 
+/*CSS for last header item*/
 .header-item1:last-child {
     color: #063839;
     font-weight: bold;
 }
-
+/*apply CSS for li tags*/
 #header-item-list > li {
     font-weight: bold;
     color: #063839;
 }
-
-
+/*apply Style for i element*/
 .fa-angle-right {
     font-size: 48px;
     color: lightgoldenrodyellow;
 }
 
+/*apply CSS for when btn is hover*/
 button#submit-btn:hover .fa-angle-right {
-    padding: 0px;
+    padding: 0;
     font-size: 60px;
     color: white;
 }
 
+/*Submit Button Style*/
 button#submit-btn {
     background-color: #B16262;
     border: 2px solid white;
@@ -79,6 +87,7 @@ button#submit-btn {
     font-size: 16px;
     cursor: pointer;
 }
+/*add style for p tag inside property section last child*/
 .propertyy:last-child > p{
     font-size: smaller;
     color: #5E5E5E;
@@ -89,20 +98,23 @@ button#submit-btn {
 .propertyy:last-child > h4:last-child{
     color: #5E5E5E;
 }
+/*apply style for heading in last child*/
 .propertyy:last-child > h3{
     color: #063839;
 }
+/*style for i tag*/
 .fa-heart{
     color: crimson;
     font-size: 30px;
 }
+/*style for heading inside section*/
 .main-sec > h3 {
     margin-top: 30px;
     margin-bottom: 20px;
     color: #413F3F;
     margin-left: 20px;
 }
-
+/*Footer section css*/
 footer.main-sec{
     width: 98%;
     height: 105px;
@@ -112,12 +124,13 @@ footer.main-sec{
     margin-left: 1%;
     margin-right: 1%;
 }
-
+/*footer image css*/
 #footer-logo-image{
     position: absolute;
     left: 150px;
     height: 35px;
 }
+/*Service name css*/
 .footer-item:nth-child(2) {
     font-size: 30px;
     padding-top: 25px;
@@ -125,18 +138,18 @@ footer.main-sec{
     color: #B16262;
     font-weight: bold;
 }
-
+/*service name additional css*/
 .footer-item:nth-child(2) > strong {
     color: #063839;
     font-weight: 600;
 }
-
+/*service vision label css*/
 .footer-item:nth-child(3) {
     font-weight: bold;
     font-size: smaller;
     margin-left: 5px;
 }
-
+/*developer details label css*/
 .footer-item:last-child {
     color: goldenrod;
     font-weight: bold;
@@ -146,24 +159,9 @@ footer.main-sec{
 }
 
 
-/*.background-image{*/
-/*    height: 500px;*/
-/*    font-size: 20px;*/
-/*    float: left;*/
-/*}*/
-/*#background-image1{*/
-/*    background-color: dodgerblue;*/
-/*}*/
-/*#background-image2{*/
-/*    background-color: hotpink;*/
-/*}*/
-/*#background-image3{*/
-/*    background-color: rebeccapurple;*/
-/*}*/
-
-
-/*header style*/
+/*style between large screen and ipad size*/
 @media screen and (min-width: 769px) {
+    /*header style*/
     #header-item-list {
         position: fixed;
         right: 0;
@@ -173,21 +171,21 @@ footer.main-sec{
         width: 33%;
         padding: 15px;
     }
-
+    /*header item css*/
     .header-item {
         float: left;
         margin-top: 5px;
         font-size: 18px;
     }
-
+    /*header item css without last item*/
     .header-item:not(:last-child) {
         margin-right: 10%;
     }
-
+    /*logo image css*/
     img#logo-image {
         height: 30px;
     }
-
+    /*list of web site logo and details css*/
     #header-item-list1 {
         position: fixed;
         top: 20px;
@@ -195,24 +193,25 @@ footer.main-sec{
         width: 24%;
         text-align: center;
     }
-
+    /*Logo image 2nd child CSS*/
     .header-item1:nth-child(2) {
         font-size: 40px;
     }
 
+    /*Logo image 1st child CSS*/
     .header-item1:first-child {
         position: fixed;
         right: 7%;
         top: 10px;
     }
-
+    /*body styles*/
     body {
         background-image: url("../images/largewallpaper.jpg");
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-
+    /*Search Section CSS*/
     #search-section {
         border-radius: 90px;
         position: absolute;
@@ -224,25 +223,26 @@ footer.main-sec{
         padding-left: 10%;
         padding-right: 10%;
     }
-
+    /*sTART STYLE OF Form to enter users search criteria*/
+    /*CSS of Filter by number of bedroom*/
     form > label:nth-child(4), label:nth-child(5) {
         width: 43%;
     }
-
+    /*Apply style for elements inside form without 1,4,5,10 child*/
     form > label:not(.form-label:nth-child(1), .form-label:nth-child(4) , .form-label:nth-child(5) , .form-label:nth-child(10)) {
         margin-top: 20px;
         margin-bottom: 5px;
     }
-
+    /*apply style for first child inside form*/
     .form-label:first-child {
         margin-top: 30px;
         margin-bottom: 5px;
     }
-
+    /*apply style for all label in the form*/
     form > label {
         font-weight: bold;
     }
-
+    /*apply stype for all input type is text*/
     form > input[type=text] {
         width: 43%;
         opacity: 50%;
@@ -251,35 +251,37 @@ footer.main-sec{
         border-radius: 12px;
     }
 
+    /*apply stype for all input type is date and for all select tags*/
     form > input[type=date], select {
         opacity: 50%;
         border: #707070 solid 1px;
         font-weight: bold;
         border-radius: 12px;
     }
-
+    /*CSS for submit button*/
     button#submit-btn {
         width: 100px;
         height: 70px;
         border-radius: 50%;
         margin: 10px 37%;
     }
-
+    /*CSS for Middle section for result and fav list*/
     #main-section {
         position: absolute;
         top: 650px;
         width: 100%;
     }
-
+    /*CSS for both result and fav list sections*/
     .main-sec {
         float: left;
     }
 
-
+    /*CSS for result section*/
     #result-section {
         width: 70%;
     }
 
+    /*Css for direct heading child of result section*/
     #result-section > h2 {
         background-color: #063839;
         color: white;
@@ -289,17 +291,17 @@ footer.main-sec{
         margin-top: 20px;
         margin-left: 1%;
     }
-
+    /*large image style*/
     .property > img {
         height: 150px;
         border-radius: 25px;
         padding-right: 15px;
     }
-
+    /*property section CSS*/
     #property-section {
         width: 100%;
     }
-
+    /*each property pane CSS*/
     .property {
         width: 400px;
         border: lightgoldenrodyellow 2px solid;
@@ -311,27 +313,31 @@ footer.main-sec{
         padding-bottom: 20px;
         cursor: pointer;
     }
-
+    /*apply CSS for every child inside each property pane*/
     .propertyy {
         position: relative;
         float: left;
     }
 
+    /*apply CSS for first child inside each property pane*/
     .propertyy:first-child {
         width: 50%;
     }
 
+    /*apply CSS for last child inside each property pane*/
     .propertyy:last-child {
         width: 43%;
     }
-
+    /*apply CSS for fav list section*/
     #fav-list-section {
         width: 25%;
     }
 }
 
 
+/*style between IPad screen and smaller than IPad size*/
 @media (max-width: 768px) {
+    /*header style*/
     #header-item-list {
         position: relative;
         right: 0;
@@ -343,20 +349,24 @@ footer.main-sec{
         z-index: 2;
     }
 
+    /*header item css*/
     .header-item {
         float: left;
         margin-top: 5px;
         font-size: 18px
     }
 
+    /*header item css without last item*/
     .header-item:not(:last-child) {
         margin-right: 10%;
     }
 
+    /*logo image css*/
     img#logo-image {
         height: 30px;
     }
 
+    /*list of web site logo and details css*/
     #header-item-list1 {
         position: relative;
         right: 0;
@@ -366,16 +376,19 @@ footer.main-sec{
         text-align: center;
     }
 
+    /*Logo image 2nd child CSS*/
     #header-item-list1 > li {
         z-index: 1;
     }
 
+    /*Logo image 1st child CSS*/
     .header-item1:first-child {
         position: relative;
         right: 0;
         top: 25px;
     }
 
+    /*body styles*/
     body {
         background-image: url("../images/smallwallpaper.jpg");
         background-repeat: no-repeat;
@@ -383,6 +396,7 @@ footer.main-sec{
         background-size: cover;
     }
 
+    /*Search Section CSS*/
     #search-section {
         border-radius: 25px;
         position: absolute;
@@ -395,28 +409,34 @@ footer.main-sec{
         padding-right: 10%;
     }
 
+    /*sTART STYLE OF Form to enter users search criteria*/
     form {
         padding-top: 100px;
     }
 
+    /*CSS of Filter by number of bedroom*/
     form > label:nth-child(4), label:nth-child(5) {
         width: 40%;
     }
 
+    /*Apply style for elements inside form without 1,4,5,10 child*/
     form > label:not(.form-label:nth-child(1), .form-label:nth-child(4) , .form-label:nth-child(5) , .form-label:nth-child(10)) {
         margin-top: 20px;
         margin-bottom: 5px;
     }
 
+    /*apply style for first child inside form*/
     .form-label:first-child {
         margin-top: 30px;
         margin-bottom: 5px;
     }
 
+    /*apply style for all label in the form*/
     form > label {
         font-weight: bold;
     }
 
+    /*apply stype for all input type is text*/
     form > input[type=text] {
         width: 43%;
         opacity: 50%;
@@ -425,6 +445,7 @@ footer.main-sec{
         border-radius: 12px;
     }
 
+    /*apply stype for all input type is date and for all select tags*/
     form > input[type=date], select {
         opacity: 50%;
         border: #707070 solid 1px;
@@ -432,6 +453,7 @@ footer.main-sec{
         border-radius: 12px;
     }
 
+    /*CSS for submit button*/
     button#submit-btn {
         padding: 20px;
         width: 100px;
@@ -440,6 +462,7 @@ footer.main-sec{
         margin: 50px 37%;
     }
 
+    /*CSS for Middle section for result and fav list*/
     #main-section {
         position: absolute;
         top: 830px;
@@ -447,10 +470,12 @@ footer.main-sec{
         background-color: white;
     }
 
+    /*CSS for result section*/
     #result-section {
         width: 100%;
     }
 
+    /*Css for direct heading child of result section*/
     #result-section > h2 {
         background-color: #063839;
         color: white;
@@ -462,16 +487,19 @@ footer.main-sec{
         margin-right: 1%;
     }
 
+    /*large image style*/
     .property > img {
         height: 150px;
         border-radius: 25px;
         padding-right: 15px;
     }
 
+    /*property section CSS*/
     #property-section {
         width: 100%;
     }
 
+    /*each property pane CSS*/
     .property {
         border: lightgoldenrodyellow 1px solid;
         position: relative;
@@ -483,19 +511,23 @@ footer.main-sec{
         cursor: pointer;
     }
 
+    /*apply CSS for every child inside each property pane*/
     .propertyy {
         position: relative;
         float: left;
     }
 
+    /*apply CSS for first child inside each property pane*/
     .propertyy:first-child {
         width: 220px;
     }
 
+    /*apply CSS for last child inside each property pane*/
     .propertyy:last-child {
         width: 43%;
     }
 
+    /*apply CSS for fav list section*/
     #fav-list-section {
         width: 100%;
     }

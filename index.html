@@ -20,43 +20,61 @@
     <!-- Font Awesome Script-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
+<!--Search page Body-->
 <body id="main-body">
+<!--Header element in Search Page-->
 <header>
+    <!--   list of main tabs-->
     <ul id="header-item-list">
         <li class="header-item">Home</li>
         <li class="header-item">About</li>
         <li class="header-item">Google Map</li>
     </ul>
+    <!--  list of web site logo and details-->
     <ul id="header-item-list1">
-        <li class="header-item1"><img id="logo-image" src="images/logoicon.png" alt="home logo"></li>
+        <li class="header-item1">
+            <!--  Logo image-->
+            <img id="logo-image" src="images/logoicon.png" alt="home logo">
+        </li>
+        <!--   Service Name-->
         <li class="header-item1">your<strong>Home</strong></li>
+        <!--   Service vision-->
         <li class="header-item1">Find home as you need with demand</li>
     </ul>
 </header>
 
+<!--Search Section-->
 <section id="search-section" class="search">
+    <!--    Form to enter users search criteria -->
     <form>
+        <!--   Filter by property Type-->
         <label for="propertyType" class="form-label">Property Type</label>
         <select name="propertyType" id="propertyType">
             <option value="any">Any</option>
             <option value="house">House</option>
             <option value="flat">Flat</option>
         </select>
+        <!--    Filter by number of bedrooms-->
         <label class="form-label">Bedrooms</label>
         <label class="form-label" for="mini-bedrooms">min</label>
         <label class="form-label" for="max-bedrooms">max</label>
         <input type="text" id="mini-bedrooms">
         <input type="text" id="max-bedrooms">
+        <!--    Filter by Price range-->
         <label class="form-label">Price</label><br>
         <label class="form-label" for="price-range">Rs. 00.00 - Rs. 00.00</label>
         <input type="range" id="price-range" min="10000" max="800000">
+        <!--   Filter by Property Added Date by Site-->
         <label for="added-date" class="form-label">Added Date</label>
         <input type="date" id="added-date" required>
+        <!--   Customerize Submit button-->
         <button type="button" id="submit-btn">
             <i class='fas fa-angle-right'></i></button>
     </form>
 </section>
+<!--Middle section for result and fav list-->
 <section id="main-section">
+<!--    Result Section-->
     <section id="result-section" class="main-sec">
         <h2>Any property with 1 - 2 bedrooms between Rs. 20,000 and Rs. 65,000</h2>
         <h3>All Results</h3>
@@ -96,16 +114,24 @@
             </section>
         </section>
     </section>
+<!--    Favorites List Section-->
     <section id="fav-list-section" class="main-sec">
         <h3>Favorites List</h3>
         <section style="background-color: #063839;height: 50px"></section>
     </section>
 
+<!--    Footer Section-->
     <footer class="main-sec">
         <ul id="footer-item-list">
-            <li class="footer-item"><img id="footer-logo-image" src="images/logoicon.png" alt="home logo"></li>
+<!--            Site Logo-->
+            <li class="footer-item">
+                <img id="footer-logo-image" src="images/logoicon.png" alt="home logo">
+            </li>
+<!--            Service Name-->
             <li class="footer-item">your<strong>Home</strong></li>
+<!--            Service vision-->
             <li class="footer-item">Find home as you need with demand</li>
+<!--            Site developer Details-->
             <li class="footer-item">Thamudhi Fernando @ 2021 Jan</li>
         </ul>
     </footer>
