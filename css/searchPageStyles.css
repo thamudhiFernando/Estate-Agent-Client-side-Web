@@ -225,8 +225,9 @@ footer.main-sec{
     }
     /*sTART STYLE OF Form to enter users search criteria*/
     /*CSS of Filter by number of bedroom*/
-    form > label:nth-child(4), label:nth-child(5) {
+    form > label:nth-child(4), label:nth-child(5), label:nth-child(13), label:nth-child(14) {
         width: 43%;
+        /*background-color: yellowgreen;*/
     }
     /*Apply style for elements inside form without 1,4,5,10 child*/
     form > label:not(.form-label:nth-child(1), .form-label:nth-child(4) , .form-label:nth-child(5) , .form-label:nth-child(10)) {
@@ -415,10 +416,9 @@ footer.main-sec{
     }
 
     /*CSS of Filter by number of bedroom*/
-    form > label:nth-child(4), label:nth-child(5) {
+    form > label:nth-child(4), label:nth-child(5) , label:nth-child(13), label:nth-child(14){
         width: 40%;
     }
-
     /*Apply style for elements inside form without 1,4,5,10 child*/
     form > label:not(.form-label:nth-child(1), .form-label:nth-child(4) , .form-label:nth-child(5) , .form-label:nth-child(10)) {
         margin-top: 20px;

@@ -8,3 +8,4 @@ function redirectTab(idValue,elmnt) {
 }
 
 document.getElementById("defaultTab").click();
+

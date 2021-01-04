@@ -19,6 +19,10 @@
 
     <!-- Font Awesome Script-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
 </head>
 <!--Search page Body-->
 <body id="main-body">
@@ -44,7 +48,7 @@
 </header>
 
 <!--Search Section-->
-<section id="search-section" class="search">
+<section id="search-section" class="search widget">
     <!--    Form to enter users search criteria -->
     <form>
         <!--   Filter by property Type-->
@@ -65,11 +69,15 @@
         <label class="form-label" for="price-range">Rs. 00.00 - Rs. 00.00</label>
         <input type="range" id="price-range" min="10000" max="800000">
         <!--   Filter by Property Added Date by Site-->
-        <label for="added-date" class="form-label">Added Date</label>
-        <input type="date" id="added-date" required>
+        <label class="form-label">Added Date</label>
+        <label class="form-label" for="start-added-date">Start</label>
+        <label class="form-label" for="end-added-date">End</label>
+        <input type="text" id="start-added-date" required name="start-added-date">
+        <input type="text" id="end-added-date" name="end-added-date">
         <!--   Customerize Submit button-->
         <button type="button" id="submit-btn">
-            <i class='fas fa-angle-right'></i></button>
+            <i class='fas fa-angle-right'></i>
+        </button>
     </form>
 </section>
 <!--Middle section for result and fav list-->
@@ -139,5 +147,11 @@
 
 <!--JQuery Script-->
 <script src="js/jquery-3.3.1.min.js"></script>
+
+<!--JQuery UI Script-->
+<script src="js/jquery-ui.min.js"></script>
+
+<!--Script for Search Page-->
+<script src="js/searchPageScript.js"></script>
 </body>
 </html>
