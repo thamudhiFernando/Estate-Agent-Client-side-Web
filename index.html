@@ -60,14 +60,15 @@
         </select>
         <!--    Filter by number of bedrooms-->
         <label class="form-label">Bedrooms</label>
-        <label class="form-label" for="mini-bedrooms">min</label>
         <label class="form-label" for="max-bedrooms">max</label>
+        <label class="form-label" for="mini-bedrooms">min</label>
         <input type="text" id="mini-bedrooms">
         <input type="text" id="max-bedrooms">
         <!--    Filter by Price range-->
         <label class="form-label">Price</label><br>
-        <label class="form-label" for="price-range">Rs. 00.00 - Rs. 00.00</label>
-        <input type="range" id="price-range" min="10000" max="800000">
+        <label class="form-label" id="price-text" >Rs.10000.00 - Rs.10000.00</label>
+<!--        <input type="range" id="price-range" min="10000" max="800000">-->
+        <div id="price-range"></div>
         <!--   Filter by Property Added Date by Site-->
         <label class="form-label">Added Date</label>
         <label class="form-label" for="start-added-date">Start</label>

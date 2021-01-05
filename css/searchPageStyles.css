@@ -15,6 +15,11 @@ form > label, input, select {
     padding: 5px;
     font-size: 20px;
 }
+form > div#price-range {
+    width: 100%;
+    padding: 0;
+    font-size: 20px;
+}
 
 /*apply CSS for all label class as form-label inside form  */
 form > .form-label {
@@ -29,7 +34,7 @@ form > .form-label:nth-child(5) {
 }
 
 /*apply CSS for input type as text inside form*/
-form > input[type=text] {
+form > input[type=text] ,div#price-range{
     position: relative;
     float: left;
 }
@@ -225,12 +230,12 @@ footer.main-sec{
     }
     /*sTART STYLE OF Form to enter users search criteria*/
     /*CSS of Filter by number of bedroom*/
-    form > label:nth-child(4), label:nth-child(5), label:nth-child(13), label:nth-child(14) {
+    form > label:nth-child(5), label:nth-child(6), label:nth-child(14), label:nth-child(15) {
         width: 43%;
         /*background-color: yellowgreen;*/
     }
     /*Apply style for elements inside form without 1,4,5,10 child*/
-    form > label:not(.form-label:nth-child(1), .form-label:nth-child(4) , .form-label:nth-child(5) , .form-label:nth-child(10)) {
+    form > label:not(.form-label:nth-child(1), .form-label:nth-child(5) , .form-label:nth-child(6) , .form-label:nth-child(11)) {
         margin-top: 20px;
         margin-bottom: 5px;
     }
@@ -416,11 +421,11 @@ footer.main-sec{
     }
 
     /*CSS of Filter by number of bedroom*/
-    form > label:nth-child(4), label:nth-child(5) , label:nth-child(13), label:nth-child(14){
+    form > label:nth-child(5), label:nth-child(6) , label:nth-child(14), label:nth-child(15){
         width: 40%;
     }
     /*Apply style for elements inside form without 1,4,5,10 child*/
-    form > label:not(.form-label:nth-child(1), .form-label:nth-child(4) , .form-label:nth-child(5) , .form-label:nth-child(10)) {
+    form > label:not(.form-label:nth-child(1), .form-label:nth-child(5) , .form-label:nth-child(6) , .form-label:nth-child(11)) {
         margin-top: 20px;
         margin-bottom: 5px;
     }
