@@ -22,7 +22,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <!-- JQuery UI CSS-->
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
 </head>
 
 <!--Body of property page-->
@@ -79,30 +79,34 @@
             </hgroup>
             <!--   Property details -->
             <section id="tab-pane">
-                <!--  Tab button list-->
-                <button class="tab-btn" id="defaultTab" onclick="redirectTab('Description', this)">Description</button>
-                <button class="tab-btn" onclick="redirectTab('Floor', this)">Floor Plan</button>
-                <button class="tab-btn" onclick="redirectTab('Google', this)">Google Map</button>
+                <!--  Tab Item list-->
+                <ul>
+                    <li><a href="#Description">Description</a></li>
+                    <li><a href="#Floor">Floor Plan</a></li>
+                    <li><a href="#Google">Google Map</a></li>
+                </ul>
                 <!--   Description Tab-->
                 <section id="Description" class="tab-pane-content">
                     <h2>Description</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, distinctio dolorem esse
                         expedita explicabo facilis nostrum, nulla, officia quasi similique voluptate. Facere nemo quo
-                        ratione saepe, unde veritatis voluptatem!</p>
+                        ratione saepe, unde veritatis voluptatem! lorem
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, distinctio dolorem esse
+                        expedita explicabo facilis nostrum, nulla, officia quasi similique voluptate. Facere nemo quo
+                        ratione saepe, unde veritatis voluptatem! lorem</p>
+                    <section><img src="../images/location-icon.png" alt="location-icon"><h4>No: 21/35 A4, NEW GALLE ROAD, EGODA UYANA, MORATUWA, SRI LANKA</h4></section>
                 </section>
                 <!--   Floor Plan Tab-->
                 <section id="Floor" class="tab-pane-content">
-                    <h2>Floor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, distinctio dolorem esse
-                        expedita explicabo facilis nostrum, nulla, officia quasi similique voluptate. Facere nemo quo
-                        ratione saepe, unde veritatis voluptatem!</p>
+                    <h2>Floor Plan</h2>
+                    <img id="floor-image" class="zoom" src="../images/prop1Plan.jpg" alt="floor-plan">
+                    <section id="zoom-section" class="image-zoom zoom"></section>
                 </section>
                 <!--   Google MAp Tab-->
                 <section id="Google" class="tab-pane-content">
-                    <h2>Google</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, distinctio dolorem esse
-                        expedita explicabo facilis nostrum, nulla, officia quasi similique voluptate. Facere nemo quo
-                        ratione saepe, unde veritatis voluptatem!</p>
+                    <h2>Google Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15849.012476246357!2d79.92558446044919!3d6.738946560073294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f57617c22c5%3A0x8b2393e6934b5c36!2sBolgoda%20Serenity%20Bungalow!5e0!3m2!1sen!2slk!4v1609847604859!5m2!1sen!2slk" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </section>
                 </section>
             </section>
         </section>
@@ -127,12 +131,14 @@
 </footer>
 
 <!--JQuery Script-->
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
 
 <!--JQuery UI Script-->
-<script src="js/jquery-ui.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
 
 <!--Script for Each Property Page-->
 <script src="../js/propertyScript.js"></script>
+
+
 </body>
 </html>
