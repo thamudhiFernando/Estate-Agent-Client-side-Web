@@ -1,10 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta tags-->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Estate Agent Web Site">
+    <meta name="author" content="Thamudhi Fernando">
+    <meta name="thamudhi,fernando,yourHome,system,your,html,css,jquery,,media,js,Home,Estate,EstateAgent,Agent,web,site,page">
+
+    <!--  Title of the page-->
+    <title>yourHome - Estate Agent</title>
+
+    <!--  Additional CSS-->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Style Sheets-->
+    <link rel="stylesheet" href="../css/propertyStyle.css">
+    <link rel="stylesheet" href="../css/searchPageStyles.css">
+
+    <!-- Font Awesome Script-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
 </head>
+
+<!--Body of property page-->
 <body>
+
+<!--Header element in Property Page-->
+<header>
+    <!--   list of main tabs-->
+    <ul id="header-item-list">
+        <li class="header-item">Home</li>
+        <li class="header-item">About</li>
+        <li class="header-item">Google Map</li>
+    </ul>
+
+    <!--    list of web site logo and details-->
+    <ul id="header-item-list1">
+        <li class="header-item1">
+            <img id="logo-image" src="../images/logoicon.png" alt="home logo">
+        </li>
+        <!--   Service Name-->
+        <li class="header-item1">your
+            <strong id="strong-home">Home</strong>
+        </li>
+        <!--   Service vision-->
+        <li class="header-item1">Find home as you need with demand</li>
+    </ul>
+</header>
+
+<section id="prop-main-section">
+    <section class="prop-sections">
+        <!--  Image section-->
+        <section class="prop-section">
+            <!--  Large Image of property-->
+            <img alt="property1" class="prop-section-main-img image" id="large-image">
+            <!--   Thumbnail images-->
+            <section id="image-list" class="image"></section>
+        </section>
+        <!--  Detail Section-->
+        <section class="prop-section">
+            <!--   heading group with short description-->
+            <hgroup></hgroup>
+            <!--   Property details -->
+            <section id="tab-pane">
+                <!--  Tab Item list-->
+                <ul>
+                    <li><a href="#Description">Description</a></li>
+                    <li><a href="#Floor">Floor Plan</a></li>
+                    <li><a href="#Google">Google Map</a></li>
+                </ul>
+                <!--   Description Tab-->
+                <section id="Description" class="tab-pane-content"></section>
+                <!--   Floor Plan Tab-->
+                <section id="Floor" class="tab-pane-content"></section>
+                <!--   Google MAp Tab-->
+                <section id="Google" class="tab-pane-content"></section>
+            </section>
+        </section>
+    </section>
+</section>
+
+</section>
+
+<!--    Footer Section-->
+<footer class="main-sec prop-footer">
+    <ul id="footer-item-list">
+        <!--   Site Logo-->
+        <li class="footer-item">
+            <img id="footer-logo-image" src="../images/logoicon.png" alt="home logo">
+        </li>
+        <!--    Service Name-->
+        <li class="footer-item">your<strong>Home</strong></li>
+        <!--   Service vision-->
+        <li class="footer-item">Find home as you need with demand</li>
+        <!--   Site developer Details-->
+        <li class="footer-item">Thamudhi Fernando @ 2021 Jan</li>
+    </ul>
+</footer>
+
+<!--JQuery Script-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+
+<!--JQuery UI Script-->
+<script src="../js/jquery-ui.min.js"></script>
+
+<!--Script for Each Property Page-->
+<script src="../js/propertyScript.js"></script>
+
+<!--Script for Each Property Page-->
+<script src="../js/property5Script.js"></script>
+
 
 </body>
 </html>
